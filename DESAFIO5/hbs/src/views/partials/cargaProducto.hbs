@@ -1,0 +1,66 @@
+<div class="container m-5">
+  <h1>Carga de Péliculas</h1>
+  <form action="/productos" method="POST">
+    <div class="input-group m-3">
+      <span class="input-group-text">Titulo de Película: </span>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Nombre"
+        name="title"
+      />
+    </div>
+    <div class="input-group m-3">
+      <span class="input-group-text">Precio: </span>
+      <input
+        type="number"
+        class="form-control"
+        placeholder="Precio"
+        name="price"
+      />
+    </div>
+    <div class="input-group m-3">
+      <span class="input-group-text">Portada</span>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="URL"
+        name="thumbnail"
+        id="url"
+      />
+    </div>
+    <button class="btn btn-success m-3" type="submit"><i
+        class="bi bi-check-square-fill"
+      ></i>
+      Registrar</button>
+    <a href="/productos" class="btn btn-info m-3" role="button"><i
+        class="bi bi-collection-play-fill"
+      ></i>
+      Catalogo de Películas</a>
+  </form>
+  <hr />
+  <div class="container">
+    <span>URL de Portadas</span>
+    <br />
+    <button
+      class="btn btn-sm btn-primary"
+      onclick="copiar('https://mx.web.img3.acsta.net/c_310_420/pictures/18/09/27/22/55/3801936.jpg')"
+    ><i class="bi bi-card-image"></i> Película  1 "Insidius"</button>
+    <button
+      class="btn btn-sm btn-primary"
+      onclick="copiar('https://i.pinimg.com/550x/6c/f5/66/6cf5666153e2260e10308097622d5be3.jpg')"
+    ><i class="bi bi-card-image"></i> Película 2"Blair Witch"</button>
+    <button
+      class="btn btn-sm btn-primary"
+      onclick="copiar('https://sm.ign.com/ign_es/movie/i/it-capitul/it-capitulo-2_4xsj.jpg')"
+    ><i class="bi bi-card-image"></i> Película 3"It"</button>
+    <button
+      class="btn btn-sm btn-primary"
+      onclick="copiar('http://4.bp.blogspot.com/-e_gqN4lHtWc/VYTgZWLY4MI/AAAAAAAAAiU/PYC9T-9GbuM/s1600/El%2Bresplandor%2Bpel%25C3%25ADcula.jpg')"
+    ><i class="bi bi-card-image"></i> Película 4 "The Shining"</button>
+    <button
+      class="btn btn-sm btn-primary"
+      onclick="copiar('https://www.mubis.es/media/articles/30236/289829/trailer-en-castellano-de-resident-evil-bienvenidos-a-raccoon-city-original.jpg')"
+    ><i class="bi bi-card-image"></i> Película 5 "Resident Evil"</button>
+  </div>
+</div>

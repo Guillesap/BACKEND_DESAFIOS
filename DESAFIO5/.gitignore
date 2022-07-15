@@ -1,0 +1,6 @@
+# Ignora la carpeta node_modules
+node_modules
+ejs/node_modules
+hbs/node_modules
+pug/node_modules
+

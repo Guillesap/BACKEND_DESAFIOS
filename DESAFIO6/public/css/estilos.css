@@ -1,0 +1,48 @@
+body {background-color:rgb(25, 26, 26);
+}
+    
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+h2 {
+    color: red;
+    text-align: center;
+}
+
+
+label {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.jumbotron {
+    min-height: 100vh;
+}
+
+.email{
+    color: blue;
+    font-weight: bold;
+}
+
+.msj{
+    font-style: italic;
+    color: green;
+}
+
+.fyh{
+    color: maroon;
+}
+
+#michael {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1mm;
+  }
+
+  #michael img{
+    border: solid;
+    border-color: rgb(189, 18, 18);
+    margin: 0 auto;
+  }

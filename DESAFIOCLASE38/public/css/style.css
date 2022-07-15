@@ -1,0 +1,79 @@
+body {background-color:rgb(220, 250, 127);
+}
+    
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+h2 {
+    color: red;
+    text-align: center;
+}
+
+h3 {
+    color: rgb(30, 42, 61);
+    text-align: center;
+}
+
+
+p {
+    color: rgb(15, 15, 15);
+    text-align: center;
+}
+label {
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+#michael {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1mm;
+  }
+
+  #michael img{
+    border: solid;
+    border-color: rgb(189, 18, 18);
+    margin: 0 auto;
+  }
+
+.user-chat {
+    color: blue;
+    font-weight: bold;
+}
+
+.date-chat {
+    color: brown;
+}
+
+.msg-chat {
+    color: green;
+    font-style: italic;
+    
+}
+
+#foto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1mm;
+  }
+
+  #foto img{
+    margin: 0 auto;
+    size: 10 mm;
+  }
+
+  #ghost {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1mm;
+  }
+
+  #ghost img{
+    border: solid;
+    border-color: rgb(147, 204, 25);
+    margin: 0 auto;
+    size-adjust: 1cm;
+  }

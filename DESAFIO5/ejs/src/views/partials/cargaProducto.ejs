@@ -1,0 +1,77 @@
+<div class="container m-5">
+  
+  <h1>Carga de Películas</h1>
+  <form action="/productos" method="POST">
+    <div class="input-group m-3">
+      <span class="input-group-text">Título: </span>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Nombre"
+        name="title"
+      />
+    </div>
+    <div class="input-group m-3">
+      <span class="input-group-text">Precio: </span>
+      <input
+        type="number"
+        class="form-control"
+        placeholder="Precio"
+        name="price"
+      />
+    </div>
+    <div class="input-group m-3">
+      <span class="input-group-text">URL Imagen </span>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="URL"
+        name="thumbnail"
+        id="url"
+      />
+    </div>
+    <button class="btn btn-success m-3" type="submit">
+      <i class="bi bi-check-square-fill"></i> Registrar
+    </button>
+    <a href="/productos" class="btn btn-info m-3" role="button"
+      ><i class="bi bi-collection-play-fill"></i> Catalogo de Películas</a
+    >
+  </form>
+  <hr />
+  <div class="container">
+    <span><h4>URL de Portadas de Películas</h4></span>
+    <br />
+    <button
+      class="btn btn-sm btn-primary"
+      onclick="copiar('https://i.ytimg.com/vi/CIqfwbN1mMc/movieposter_en.jpg')"
+    >
+      <i class="bi bi-card-image"></i> Película 1 "Scream"
+    </button>
+    <button
+      class="btn btn-sm btn-primary"
+      onclick="copiar('https://i.pinimg.com/474x/2e/e5/5a/2ee55a28e68f99aa3ca8e4a90c308f66--pig-mask-flash-photography.jpg')"
+    >
+      <i class="bi bi-card-image"></i> Película 2 "Saw"
+    </button>
+    <button
+      class="btn btn-sm btn-primary"
+      onclick="copiar('https://es.web.img3.acsta.net/pictures/21/09/15/17/03/3215619.jpg')"
+    >
+      <i class="bi bi-card-image"></i> Película 3 "Halloween"
+    </button>
+    <button
+      class="btn btn-sm btn-primary"
+      onclick="copiar('https://es.web.img2.acsta.net/medias/nmedia/18/94/82/86/20531531.jpg')"
+    >
+      <i class="bi bi-card-image"></i> Película 4 "Pesadilla en Elm Street"
+    </button>
+    <button
+      class="btn btn-sm btn-primary"
+      onclick="copiar('https://heraldodemexico.com.mx/u/fotografias/m/2021/7/25/f768x1-400175_400302_170.jpg')"
+    >
+      <i class="bi bi-card-image"></i> Película 5 "Se lo que hicieron"
+    </button>
+  </div>
+</div>
+
+

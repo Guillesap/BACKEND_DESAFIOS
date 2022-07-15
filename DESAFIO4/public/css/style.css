@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #b61414;
+  font-family: "Roboto", sans-serif;
+}
+header {
+  padding: 2% 10%;
+  background: #121213;
+  color: #f2f2f2;
+  text-align: center;
+}
+.contenedor {
+  max-width: 90%;
+  margin: 2% auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#michael {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1mm;
+}
+#michael img{
+  border: solid;
+  border-color: rgb(127, 228, 11);
+  margin: 0 auto;
+}
+h1 {
+  font-size: 2em;
+  width: 100%;
+  color: rgb(199, 233, 10);
+  text-align: center;
+}
+h2 {
+  font-size: 1em;
+  width: 100%;
+  color: rgb(223, 82, 47);
+  text-align: center;
+}
+p {
+  font-size: 1em;
+  width: 100%;
+  color: rgb(124, 14, 100);
+  text-align: center;
+}
+form {
+  width: 30%;
+  text-align: center;
+  color: rgb(243, 33, 33);
+}
+label {
+  width: 100%;
+  font-size: 0.9em;
+  display: block;
+  text-align: left;
+  margin: 20px 0 10px 0;
+}
+input {
+  width: 100%;
+  background: #ebebeb;
+  border: 1px solid #a2a2a2;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 10px 0;
+}
+button {
+  margin-top: 30px;
+  background: #323232;
+  color: #f2f2f2;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: 100%;
+}

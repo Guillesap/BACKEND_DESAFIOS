@@ -1,0 +1,22 @@
+<div class="container m-5">
+  <h1>Películas Regitradas</h1>
+  <table class="table table-primary table-striped">
+    <thead>
+        <tr>
+        <th scope="col">Nombre Película</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Portada</th>
+        </tr>
+    </thead>
+    <tbody>
+            {{#each productos}}
+                <tr>
+                    <td class="nombreProd">{{this.title}}</td>
+                    <td class="prProd">{{this.price}}</td>
+                    <td><img alt="Foto" class="fotoProd" src={{this.thumbnail}}></td>
+                </tr>
+            {{/each}}
+    </tbody>
+  </table>
+  <a href="/" class="btn btn-lg btn-info" role="button"><i class="bi-house-fill"></i> Inicio</a>
+</div>

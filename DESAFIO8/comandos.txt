@@ -1,0 +1,33 @@
+//creando base de datos llamada ecommerce
+
+use ecommerce  
+db.createCollection('mensaje')
+db.createCollection('productos')
+
+db.mensaje.insert([{user: "Guillermo", text:"Coleccionista de películas de teror clásicos"},{user: "Raúl", text:"Seguidor de cine de fenómemenos paranormales"},{user: "Jose", text:"Amante de cine relacionado al fenómeno ovni"}, {user: "Claudio", text:"Amante de cine de Zombies"},{user: "Andrea", text:"Amante de cine relacionado a la apocalipsis"}, {user: "Sandra", text:"Coleccionista de películas de vampiros"}])
+
+db.productos.insert([{"title":"Saw","price":1500,"thumbnail":"https://areajugones.sport.es/wp-content/uploads/2021/05/saw-1.jpg","id":1},{"title":"It","price":850,"thumbnail":"https://www.srgeekarg.com/wp-content/uploads/2019/09/it-90s-PORTADA.jpg","id":2},{"title":"Blair Witch","price":3000,"thumbnail":"https://c8.alamy.com/compes/dxj6nc/el-proyecto-de-la-bruja-de-blair-dxj6nc.jpg","id":3},{"title":"Pesadilla","price":5500,"thumbnail":"https://es.web.img2.acsta.net/medias/nmedia/18/95/58/31/20416163.jpg","id":4},{"title":"Psicosis","price":560,"thumbnail":"https://www.elsoldemexico.com.mx/gossip/x43d5o-psicosis-pelicula.jpg/ALTERNATES/LANDSCAPE_960/Psicosis%20pelicula.jpg","id":5}])
+
+db.productos.insert([{"title":"Misery","price":2500,"thumbnail":"https://i.ytimg.com/vi/Fv78aj0p-RI/hqdefault.jpg","id":6},
+
+{"title":"Resident Evil","price":4550,"thumbnail":"https://es.web.img3.acsta.net/medias/nmedia/18/69/52/49/20051655.jpg","id":7},
+
+{"title":"Wrong Turn","price":3700,"thumbnail":"https://m.media-amazon.com/images/I/51YCIsSC0AL._AC_SY580_.jpg","id":8},
+
+{"title":"Cienpies Humano","price":6500,"thumbnail":"https://es.web.img3.acsta.net/medias/nmedia/18/92/62/06/20209152.jpg","id":9},
+
+{"title":"Scream4","price":1560,"thumbnail":"http://img5.allocine.fr/acmedia/medias/nmedia/18/83/41/28/19689479.jpg","id":10}])
+
+
+db.mensaje.find({})
+db.productos.find({})
+
+db.mesnajes.estimatedDocumentCount()
+db.productos.estimatedDocumentCount()
+
+use admin
+db.createUser ({"user": "pepe", "pwd": "asd456", "roles": [{role:"read", db: "ecommerce"}]})
+
+
+
+

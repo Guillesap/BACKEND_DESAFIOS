@@ -1,0 +1,35 @@
+<h2>Agregar películas</h2>
+
+<form id="form-product" action="http://localhost:8080/api/product/create" method="POST" class="container">
+  <div class="mb-3">
+    <label for="title" class="form-label">Nombre de la película</label>
+    <input type="text" class="form-control" id="title" name="title" placeholder="Ingrese nombre"/>
+  </div>
+
+  <div class="mb-3">
+    <label for="description" class="form-label">Descripción de la película</label>
+    <input type="text" class="form-control" id="description" name="description" placeholder="Ingrese descripción "/>
+  </div>
+
+  <div class="mb-3">
+    <label for="price" class="form-label">Precio</label>
+    <input type="text" class="form-control" id="price" name="price" placeholder="Ingrese Precio"/>
+  </div>
+
+  <div class="mb-3">
+    <label for="thumbnail" class="form-label">Portada</label>
+    <input type="text" class="form-control" id="thumbnail" name="thumbnail" placeholder="Ingrese URL con Portada de la película"/>
+  </div>
+
+  <div class="mb-3">
+    <label for="code" class="form-label">Codigo</label>
+    <input type="text" class="form-control" id="code" name="code" placeholder="Ingrese código"/>
+  </div>
+
+  <div class="mb-3">
+    <label for="stock" class="form-label">Stock</label>
+    <input type="text" class="form-control" id="stock" name="stock" placeholder="Ingrese stock"/>
+  </div>
+
+  <button id="btn-addproduct" type="submit" class="btn btn-primary">Agregar película</button>
+</form>

@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Se lo que hicieron",
+    "price": 1500,
+    "description": "Terror",
+    "code": "01",
+    "stock": 1,
+    "thumbnail": "http://localhost:8080/images/1650257181590.jpeg",
+    "id": 1,
+    "timestamp": 1650257181596
+  },
+  {
+    "title": "Saw",
+    "price": 1233,
+    "description": "terror",
+    "code": "03",
+    "stock": 1,
+    "thumbnail": "http://localhost:8080/images/1650506944361.jpeg",
+    "id": 2,
+    "timestamp": 1650506944484
+  }
+]

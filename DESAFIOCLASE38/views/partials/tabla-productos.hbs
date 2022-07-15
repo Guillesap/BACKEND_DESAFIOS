@@ -1,0 +1,57 @@
+<h2>Tienda de películas</h2>
+<h3>Selecciona tu título favorito</h3>
+
+{{#if noProducts.state}}
+
+  <h3>{{noProducts.msg}}</h3>
+
+{{else}}
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#id</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Icono/Imagen</th>
+        <th scope="col">Cantidad a agregar</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {{#each products}}
+        <tr>
+          <td>{{this._id}}</td>
+          <td>{{this.title}}</td>
+          <td>{{this.price}}</td>
+          <td><img
+              class="img-fluid"
+              width="80px"
+              src=""
+              alt="Imagen de {{this.title}}"
+              srcset="{{this.thumbnail}}"
+            /></td>
+          <td>
+
+            <button
+              class="btn btn-primary btn-rest"
+              onclick="restQuantity('{{this._id}}')"
+            >- </button>
+
+            <span id={{this._id}} class="quantity-product">0</span>
+
+            <button
+              class="btn btn-primary btn-add"
+              onclick="addQuantity('{{this._id}}')"
+            >+ </button>
+
+          </td>
+        </tr>
+      {{/each}}
+
+    </tbody>
+  </table>
+{{/if}}
+
+<button class="btn btn-secondary" onclick="addProducts()">
+  Agregar al carrito
+</button>

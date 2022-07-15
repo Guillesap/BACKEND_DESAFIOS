@@ -1,0 +1,24 @@
+
+  <div class="col">
+    <h3>¡Hola {{data.user.name}} {{data.user.lastname}}!</h3>
+    <p>TU PERFIL REGISTRADO:</p>
+    <p>Tu edad es: {{data.user.age}}</p>
+    <p>Tu número de contacto es: {{data.user.number}}</p>
+    <p>Tu Dirección es: {{data.user.address}}</p>
+    <p>Tu correo es: {{data.user.email}}</p>
+
+  </div>
+
+  <div id="foto">
+
+    <img
+      class="img-fluid"
+      src="{{data.user.avatar}}"
+      alt=""
+      srcset="{{data.user.avatar}}"
+    />
+
+  </div>
+
+</div>
+</div>

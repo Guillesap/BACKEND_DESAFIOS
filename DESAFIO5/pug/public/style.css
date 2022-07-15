@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(216, 206, 240);
+}
+h1 {
+    color: rgb(223, 7, 7);
+    font-size: 22px;
+}
+
+.nombreProd {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.prProd {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.fotoProd {
+    width: 100px;
+}
+
+table, th, tr, td {
+    vertical-align: middle;
+}

@@ -1,0 +1,43 @@
+{
+  "name": "arquitectura_de_capas",
+  "version": "1.0.0",
+  "description": "Desafío entregable para el curso de backend de Coderhouse",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "dev-cluster": "nodemon index.js --modo=cluster",
+    "dev:firebase": "PERSISTENCIA=firebase nodemon index.js",
+    "dev:memory": "PERSISTENCIA=memory nodemon index.js"
+  },
+  "keywords": [],
+  "author": "guille",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "@faker-js/faker": "^6.0.0",
+    "autocannon": "^7.9.0",
+    "bcrypt": "^5.0.1",
+    "compression": "^1.7.4",
+    "connect-mongo": "^4.6.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.2",
+    "faker": "^6.6.6",
+    "firebase": "^9.9.0",
+    "firebase-admin": "^10.3.0",
+    "log4js": "^6.6.0",
+    "mongodb": "^4.8.0",
+    "mongoose": "^6.4.4",
+    "normalizr": "^3.6.2",
+    "passport": "^0.5.3",
+    "passport-local": "^1.0.0",
+    "socket.io": "^4.5.1",
+    "yargs": "^17.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
