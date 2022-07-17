@@ -2,7 +2,7 @@
 
 <h2 align="center">⭐️VHS "Productos"⭐️</h2>
 
-## 🌐 [Ver Proyecto en Heroku](https://guillesapag.herokuapp.com/login)
+## 🌐 [Ver Desafio en Heroku](https://guillesapag.herokuapp.com/login)
 
 ## 🤝Instalar dependencias
 $ npm install
